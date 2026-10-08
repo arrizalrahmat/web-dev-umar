@@ -1,0 +1,141 @@
+h1.title {
+    color: red;
+    background-color: grey;
+}
+
+p {
+    color: grey;
+    background-color:bisque;
+}
+
+/* sebagai base style untuk suatu elemen button */
+button {
+        background-color: crimson;
+        border-radius: 8px;
+        /* border: 1px solid black; */
+        border-width: 8px;
+        border-color: black;
+        border-style: solid;
+        padding: 16px 24px;
+        color: white;
+        font-size: 24px;
+        margin: 8px;
+    }
+
+.approve {
+    background-color: green;
+}
+
+.tulisan1 {
+    color: green;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+#lala {
+    color:blueviolet;
+}
+
+.link {
+    font-size: 24px;
+}
+
+.link:visited {
+    color: red;
+}
+
+.link:hover {
+    color: yellow;
+}
+
+.link:active {
+    color: green;
+}
+
+.tulisan2 {
+    text-align: left;
+}
+
+
+.tulisan3 {
+    text-align: right;
+}
+
+.tulisan4 {
+    text-align: center;
+}
+
+.tulisan5 {
+    text-align: justify;
+}
+
+.kotak {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 8px
+}
+
+.kotak1 {
+    background-color: red;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.kotak2 {
+    background-color: blue;
+    position: relative;
+    left: 40px;
+}
+.kotak3 {
+    background-color: green;
+    position: static;
+    left: 40px;
+}
+.kotak4 {
+    background-color: yellow;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.none {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.bold-font {
+    font-weight: bold;
+}
+
+.red-underline {
+    text-decoration: underline;
+    color: red;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.dotted {
+    border-style: dotted;
+}
+
+.dashed {
+    border-style:dashed
+}
+
+.double {
+    border-style: double;
+}
+
+ul.transportation {
+    list-style-type:circle
+}
+
+ol.rank {
+    list-style-type:lower-roman;
+}

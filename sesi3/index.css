@@ -1,0 +1,16 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 48px;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+}
+
+.middleContainer {
+    display: flex;
+    gap: 12px;
+}
