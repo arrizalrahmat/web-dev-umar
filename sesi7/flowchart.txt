@@ -1,0 +1,8 @@
+IF document is OK
+    IF require additional info
+        Write rejection notes, choose data that need to be submitted
+    ELSE
+        Reject Application
+ELSE send email to checker
+//lanjut proses ke checker
+ENDIF
