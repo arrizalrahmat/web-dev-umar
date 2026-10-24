@@ -1,0 +1,15 @@
+.calculator {
+  width: 100%;
+  max-width: 340px;
+}
+
+.calculator-display {
+  font-variant-numeric: tabular-nums;
+  background-color: #212529;
+  color: #f8f9fa;
+  border: none;
+}
+
+.calculator button {
+  font-size: 1.25rem;
+}

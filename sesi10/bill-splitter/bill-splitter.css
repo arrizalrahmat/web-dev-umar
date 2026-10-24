@@ -1,0 +1,19 @@
+.bill-splitter {
+  width: 100%;
+  max-width: 340px;
+}
+
+.bill-display {
+  font-variant-numeric: tabular-nums;
+  background-color: #212529;
+  color: #f8f9fa;
+  border: none;
+}
+
+.bill-splitter #keypad button {
+  font-size: 1.25rem;
+}
+
+.result span {
+  font-variant-numeric: tabular-nums;
+}
