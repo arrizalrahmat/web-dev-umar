@@ -26,7 +26,6 @@
             type="text"
             id="display"
             class="form-control form-control-lg text-end fs-2 mb-3 bill-display"
-            value="0"
             readonly />
 
           <!-- Keypad -->
@@ -35,7 +34,8 @@
               <button
                 class="btn btn-light border w-100 py-3"
                 id="btn-7"
-                data-number="7">
+                data-number="7"
+                onclick="addCharacter('7')">
                 7
               </button>
             </div>
@@ -43,7 +43,8 @@
               <button
                 class="btn btn-light border w-100 py-3"
                 id="btn-8"
-                data-number="8">
+                data-number="8"
+                onclick="addCharacter('8')">
                 8
               </button>
             </div>
@@ -51,7 +52,8 @@
               <button
                 class="btn btn-light border w-100 py-3"
                 id="btn-9"
-                data-number="9">
+                data-number="9"
+                onclick="addCharacter('9')">
                 9
               </button>
             </div>
@@ -60,7 +62,8 @@
               <button
                 class="btn btn-light border w-100 py-3"
                 id="btn-4"
-                data-number="4">
+                data-number="4"
+                onclick="addCharacter('4')">
                 4
               </button>
             </div>
@@ -68,7 +71,8 @@
               <button
                 class="btn btn-light border w-100 py-3"
                 id="btn-5"
-                data-number="5">
+                data-number="5"
+                onclick="addCharacter('5')">
                 5
               </button>
             </div>
@@ -76,7 +80,8 @@
               <button
                 class="btn btn-light border w-100 py-3"
                 id="btn-6"
-                data-number="6">
+                data-number="6"
+                onclick="addCharacter('6')">
                 6
               </button>
             </div>
@@ -85,7 +90,8 @@
               <button
                 class="btn btn-light border w-100 py-3"
                 id="btn-1"
-                data-number="1">
+                data-number="1"
+                onclick="addCharacter('1')">
                 1
               </button>
             </div>
@@ -93,7 +99,8 @@
               <button
                 class="btn btn-light border w-100 py-3"
                 id="btn-2"
-                data-number="2">
+                data-number="2"
+                onclick="addCharacter('2')">
                 2
               </button>
             </div>
@@ -101,7 +108,8 @@
               <button
                 class="btn btn-light border w-100 py-3"
                 id="btn-3"
-                data-number="3">
+                data-number="3"
+                onclick="addCharacter('3')">
                 3
               </button>
             </div>
@@ -110,7 +118,8 @@
               <button
                 class="btn btn-secondary w-100 py-3"
                 id="btn-clear"
-                data-action="clear">
+                data-action="clear"
+                onclick="clearCharacter()">
                 C
               </button>
             </div>
@@ -118,7 +127,8 @@
               <button
                 class="btn btn-light border w-100 py-3"
                 id="btn-0"
-                data-number="0">
+                data-number="0"
+                onclick="addCharacter('0')">
                 0
               </button>
             </div>
@@ -126,7 +136,8 @@
               <button
                 class="btn btn-secondary w-100 py-3"
                 id="btn-delete"
-                data-action="delete">
+                data-action="delete"
+                onclick="deleteCharacter()">
                 ⌫
               </button>
             </div>
@@ -141,7 +152,8 @@
               <button
                 class="btn btn-outline-warning w-100"
                 id="tip-0"
-                data-tip="0">
+                data-tip="0"
+                onclick="activateTip(0)">
                 0%
               </button>
             </div>
@@ -149,7 +161,8 @@
               <button
                 class="btn btn-outline-warning w-100"
                 id="tip-5"
-                data-tip="5">
+                data-tip="5"
+                onclick="activateTip(5)">
                 5%
               </button>
             </div>
@@ -157,18 +170,12 @@
               <button
                 class="btn btn-warning w-100 active"
                 id="tip-10"
-                data-tip="10">
+                data-tip="10"
+                onclick="activateTip(10)">
                 10%
               </button>
             </div>
-            <div class="col-3">
-              <input
-                type="number"
-                id="tip-custom"
-                class="form-control text-center h-100"
-                placeholder="%"
-                min="0" />
-            </div>
+            <div class="col-3"></div>
           </div>
 
           <!-- People -->
@@ -179,7 +186,8 @@
             <button
               class="btn btn-outline-secondary px-4"
               id="people-minus"
-              data-people="-1">
+              data-people="-1"
+              onclick="editPerson('-')">
               −
             </button>
             <input
@@ -191,10 +199,19 @@
             <button
               class="btn btn-outline-secondary px-4"
               id="people-plus"
-              data-people="1">
+              data-people="1"
+              onclick="editPerson('+')">
               +
             </button>
           </div>
+
+          <!-- Calculate -->
+          <button
+            class="btn btn-primary w-100 py-2 mb-3"
+            id="btn-calculate"
+            onclick="calculate()">
+            Calculate
+          </button>
 
           <!-- Result -->
           <div
@@ -202,6 +219,11 @@
             <div
               class="d-flex justify-content-between small">
               <span>Tip</span>
+              <span id="tip-amount">Rp 0</span>
+            </div>
+            <div
+              class="d-flex justify-content-between small">
+              <span>Ppn (11%)</span>
               <span id="tip-amount">Rp 0</span>
             </div>
             <div
@@ -221,5 +243,6 @@
         </div>
       </div>
     </div>
+    <script src="bill-splitter.js"></script>
   </body>
 </html>

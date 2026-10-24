@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="content">
+      <h1 class="title">Lalalala</h1>
+      <h1 class="title">Hehehehe</h1>
+      <h1 class="title">Hohohohoh</h1>
+      <p id="sub-title">
+        sub judul <strong>something</strong>
+      </p>
+      <input id="input" />
+    </div>
+    <script>
+      const titles =
+        document.getElementsByClassName('title');
+      const subtitle = document.getElementById('sub-title');
+      subtitle.style.backgroundColor = 'blue';
+      subtitle.style.color = 'white';
+      // gunakan innerText, ketika content adalah plain text
+      subtitle.innerText = 'aku sudah berubah';
+      // gunakan innerHTML, ketika content adalah elemen html
+      subtitle.innerHTML =
+        'Aku sudah <strong>berubah<strong>';
+
+      const input = document.getElementById('input');
+      input.value = 'Arrizal Rahmat Kurniawan';
+
+      const content = document.getElementById('content');
+      // membuat elemen baru
+      const redBox = document.createElement('div');
+      redBox.style.backgroundColor = 'red';
+      redBox.style.height = '100px';
+      redBox.style.width = '100px';
+
+      content.appendChild(redBox);
+
+      // menghapus elemen
+      redBox.remove();
+    </script>
+  </body>
+</html>

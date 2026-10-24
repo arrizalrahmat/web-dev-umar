@@ -1,0 +1,3 @@
+validasi operator hanya bisa 1. contoh: kalau current + ketika di klik -, maka + akan tereplace dengan -
+validasi akhir dari display.value harus angka, tidak boleh operator
+validasi awal dari display.value harus angka, tidak boleh operator

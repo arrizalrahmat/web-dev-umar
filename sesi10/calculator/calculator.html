@@ -29,7 +29,8 @@
               <button
                 class="btn btn-secondary w-100 py-3"
                 id="btn-clear"
-                data-action="clear">
+                data-action="clear"
+                onclick="clearCharacter()">
                 C
               </button>
             </div>
@@ -37,7 +38,8 @@
               <button
                 class="btn btn-secondary w-100 py-3"
                 id="btn-delete"
-                data-action="delete">
+                data-action="delete"
+                onclick="deleteCharacter()">
                 ⌫
               </button>
             </div>
@@ -45,7 +47,8 @@
               <button
                 class="btn btn-secondary w-100 py-3"
                 id="btn-percent"
-                data-action="percent">
+                data-action="percent"
+                onclick="addCharacter('%')">
                 %
               </button>
             </div>
@@ -53,8 +56,9 @@
               <button
                 class="btn btn-warning w-100 py-3"
                 id="btn-divide"
-                data-operator="/">
-                ÷
+                data-operator="/"
+                onclick="addCharacter('/')">
+                /
               </button>
             </div>
 
@@ -62,7 +66,8 @@
               <button
                 class="btn btn-light border w-100 py-3"
                 id="btn-7"
-                data-number="7">
+                data-number="7"
+                onclick="addCharacter('7')">
                 7
               </button>
             </div>
@@ -70,7 +75,8 @@
               <button
                 class="btn btn-light border w-100 py-3"
                 id="btn-8"
-                data-number="8">
+                data-number="8"
+                onclick="addCharacter('8')">
                 8
               </button>
             </div>
@@ -78,7 +84,8 @@
               <button
                 class="btn btn-light border w-100 py-3"
                 id="btn-9"
-                data-number="9">
+                data-number="9"
+                onclick="addCharacter('9')">
                 9
               </button>
             </div>
@@ -86,7 +93,8 @@
               <button
                 class="btn btn-warning w-100 py-3"
                 id="btn-multiply"
-                data-operator="*">
+                data-operator="*"
+                onclick="addCharacter('*')">
                 ×
               </button>
             </div>
@@ -95,7 +103,8 @@
               <button
                 class="btn btn-light border w-100 py-3"
                 id="btn-4"
-                data-number="4">
+                data-number="4"
+                onclick="addCharacter('4')">
                 4
               </button>
             </div>
@@ -103,7 +112,8 @@
               <button
                 class="btn btn-light border w-100 py-3"
                 id="btn-5"
-                data-number="5">
+                data-number="5"
+                onclick="addCharacter('5')">
                 5
               </button>
             </div>
@@ -111,7 +121,8 @@
               <button
                 class="btn btn-light border w-100 py-3"
                 id="btn-6"
-                data-number="6">
+                data-number="6"
+                onclick="addCharacter('6')">
                 6
               </button>
             </div>
@@ -119,7 +130,8 @@
               <button
                 class="btn btn-warning w-100 py-3"
                 id="btn-subtract"
-                data-operator="-">
+                data-operator="-"
+                onclick="addCharacter('-')">
                 −
               </button>
             </div>
@@ -128,7 +140,8 @@
               <button
                 class="btn btn-light border w-100 py-3"
                 id="btn-1"
-                data-number="1">
+                data-number="1"
+                onclick="addCharacter('1')">
                 1
               </button>
             </div>
@@ -136,7 +149,8 @@
               <button
                 class="btn btn-light border w-100 py-3"
                 id="btn-2"
-                data-number="2">
+                data-number="2"
+                onclick="addCharacter('2')">
                 2
               </button>
             </div>
@@ -144,7 +158,8 @@
               <button
                 class="btn btn-light border w-100 py-3"
                 id="btn-3"
-                data-number="3">
+                data-number="3"
+                onclick="addCharacter('3')">
                 3
               </button>
             </div>
@@ -152,7 +167,8 @@
               <button
                 class="btn btn-warning w-100 py-3"
                 id="btn-add"
-                data-operator="+">
+                data-operator="+"
+                onclick="addCharacter('+')">
                 +
               </button>
             </div>
@@ -161,7 +177,8 @@
               <button
                 class="btn btn-light border w-100 py-3"
                 id="btn-0"
-                data-number="0">
+                data-number="0"
+                onclick="addCharacter('0')">
                 0
               </button>
             </div>
@@ -169,7 +186,8 @@
               <button
                 class="btn btn-light border w-100 py-3"
                 id="btn-dot"
-                data-number=".">
+                data-number="."
+                onclick="addCharacter('.')">
                 .
               </button>
             </div>
@@ -177,7 +195,8 @@
               <button
                 class="btn btn-primary w-100 py-3"
                 id="btn-equals"
-                data-action="equals">
+                data-action="equals"
+                onclick="calculate()">
                 =
               </button>
             </div>
@@ -185,5 +204,7 @@
         </div>
       </div>
     </div>
+    <!-- untuk connect javascript ke html -->
+    <script src="calculator.js"></script>
   </body>
 </html>
