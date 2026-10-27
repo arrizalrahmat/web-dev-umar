@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #todo-list {
+        list-style: none;
+        padding: 0;
+        max-width: 400px;
+      }
+      #todo-list li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 12px;
+        margin-bottom: 6px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+      }
+      .todo-text {
+        flex: 1;
+        margin-right: 12px;
+      }
+      .completed-todo {
+        text-decoration: line-through;
+        color: #999;
+      }
+      .actions {
+        display: flex;
+        gap: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="form">
+      <label for="newTodo">Masukkan todo: </label>
+      <input type="text" id="newTodo" />
+      <input type="submit" title="Submit" />
+    </form>
+    <ul id="todo-list"></ul>
+    <script src="todo.js"></script>
+  </body>
+</html>

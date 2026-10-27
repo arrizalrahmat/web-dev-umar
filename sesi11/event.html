@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="event.css" />
+  </head>
+  <body>
+    <div id="body">
+      <label for="name">name</label>
+      <input
+        type="text"
+        placeholder="Masukkan nama anda"
+        id="inputName" />
+    </div>
+
+    <div id="kotak" class="box"></div>
+    <select id="colorSelector" onchange="changeColor()">
+      <option value="white">Putih</option>
+      <option value="blue">Biru</option>
+      <option value="purple">Ungu</option>
+      <option value="orange">Jingga</option>
+    </select>
+    <div class="box" id="kotak2"></div>
+    <script src="event.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Kalkulator diskon</h1>
+    <label for="harga">Harga Barang (Rp):</label>
+    <input id="harga" type="number" onkeyup="cekHarga()" />
+    <button
+      id="btnHitung"
+      onclick="hitungDiskon()"
+      disabled>
+      Hitung diskon 10%
+    </button>
+    <h2 id="hasil" style="color: green"></h2>
+    <button onclick="tambahSession()">
+      Tambah session
+    </button>
+    <h2 style="color: red" id="resultSession"></h2>
+    <button onclick="tambahLocal()">Tambah local</button>
+    <h2 style="color: red" id="resultLocal"></h2>
+    <script src="index.js"></script>
+  </body>
+</html>
